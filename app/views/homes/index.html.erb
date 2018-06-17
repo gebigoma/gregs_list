@@ -1,0 +1,11 @@
+<ul>
+<% #representing each element and index position in the array %>
+<% @homes.each_with_index do |h, i| %>
+    <li>
+      <%= link_to(h[:address], home_path(i)) %> - $<%= h[:price] %>
+      </li>
+  <% end %>
+</ul>
+
+<%# arguments: what it says, where it goes%>
+<%= link_to("banana", "http://google.com") %>
